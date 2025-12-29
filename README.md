@@ -2,12 +2,12 @@
   <img src="https://img.shields.io/badge/MCP-Protocol-7c3aed?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyem0wIDE4Yy00LjQxIDAtOC0zLjU5LTgtOHMzLjU5LTggOC04IDggMy41OSA4IDgtMy41OSA4LTggOHoiLz48L3N2Zz4=" alt="MCP Protocol">
   <img src="https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Gemini">
   <img src="https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js 20+">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
+  <img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="GPL-3.0 License">
 </p>
 
 <h1 align="center">
   <br>
-  ✦ gemini-cli-mcp
+  ✦ @staticpayload/gemini-mcp
   <br>
 </h1>
 
@@ -34,7 +34,7 @@
 │                    │                                            │
 │                    ▼                                            │
 │   ┌─────────────────────────────────────┐                       │
-│   │        gemini-cli-mcp               │                       │
+│   │     @staticpayload/gemini-mcp       │                       │
 │   │   ┌─────────┐ ┌─────────┐ ┌───────┐ │                       │
 │   │   │ prompt  │ │ models  │ │  raw  │ │   ◄── MCP Tools       │
 │   │   └────┬────┘ └────┬────┘ └───┬───┘ │                       │
@@ -98,7 +98,7 @@ gemini
 ### Run the MCP Server
 
 ```bash
-npx gemini-cli-mcp
+npx @staticpayload/gemini-mcp
 ```
 
 That's it. The server starts and waits for MCP connections via stdio.
@@ -145,7 +145,7 @@ Add to your Claude configuration (`~/.claude/config.json`):
   "mcpServers": {
     "gemini": {
       "command": "npx",
-      "args": ["gemini-cli-mcp"]
+      "args": ["@staticpayload/gemini-mcp"]
     }
   }
 }
@@ -154,7 +154,7 @@ Add to your Claude configuration (`~/.claude/config.json`):
 ### With Claude CLI
 
 ```bash
-claude mcp add gemini -- npx gemini-cli-mcp
+claude mcp add gemini -- npx @staticpayload/gemini-mcp
 ```
 
 ### With Cursor / Windsurf
@@ -165,7 +165,7 @@ Add to your MCP settings:
 {
   "gemini": {
     "command": "npx",
-    "args": ["gemini-cli-mcp"]
+    "args": ["@staticpayload/gemini-mcp"]
   }
 }
 ```
@@ -216,7 +216,7 @@ The server is a thin translation layer—all heavy lifting happens in Gemini CLI
 ## 🏗️ Architecture
 
 ```
-gemini-cli-mcp/
+@staticpayload/gemini-mcp/
 ├── src/
 │   └── index.js      # MCP server (single file, ~300 lines)
 ├── package.json      # npm package with bin entry
@@ -264,7 +264,7 @@ Check stderr output for health check results:
 
 ## 📄 License
 
-MIT © 2024
+GPL-3.0 © 2024
 
 ---
 

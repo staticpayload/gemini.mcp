@@ -1,11 +1,11 @@
 {
-  "name": "gemini-cli-mcp",
+  "name": "@staticpayload/gemini-mcp",
   "version": "1.0.0",
   "description": "MCP server that bridges Google's Gemini CLI to any MCP-compatible AI assistant",
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "gemini-cli-mcp": "src/index.js"
+    "gemini-mcp": "src/index.js"
   },
   "scripts": {
     "start": "node src/index.js"
@@ -24,7 +24,7 @@
     "assistant"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "repository": {
     "type": "git",
     "url": ""

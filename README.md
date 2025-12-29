@@ -304,5 +304,5 @@ GPL-3.0 © 2025
 ---
 
 <p align="center">
-  <sub>Built with lazyness for the MCP ecosystem</sub>
+  <sub>Built with lazyness for fun</sub>
 </p>

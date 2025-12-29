@@ -299,10 +299,10 @@ Check stderr output for health check results:
 
 ## 📄 License
 
-GPL-3.0 © 2024
+GPL-3.0 © 2025
 
 ---
 
 <p align="center">
-  <sub>Built with ❤️ for the MCP ecosystem</sub>
+  <sub>Built with lazyness for the MCP ecosystem</sub>
 </p>

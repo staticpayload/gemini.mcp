@@ -20,6 +20,7 @@
   <a href="#-tools">Tools</a> •
   <a href="#-usage">Usage</a> •
   <a href="#-configuration">Configuration</a> •
+  <a href="#-autonomous-setup">Autonomous Setup</a> •
   <a href="#-how-it-works">How It Works</a>
 </p>
 
@@ -192,6 +193,40 @@ The server inherits your full environment, so existing Gemini configuration work
 GEMINI_* env vars          ← All Gemini environment variables
 gcloud auth                ← Application default credentials
 ```
+
+---
+
+## 🤖 Autonomous Setup
+
+For production deployments with **Vertex AI authentication** and **zero interactive prompts**, use the automated setup:
+
+```bash
+# 1. Copy environment template
+cp .env.example .env
+
+# 2. Edit .env with your GCP project
+# PROJECT_ID=your-gcp-project-id
+
+# 3. Authenticate with gcloud
+gcloud auth application-default login
+
+# 4. Run automated setup
+./setup-gemini.sh
+
+# 5. Use Gemini autonomously
+./run-gemini.sh
+```
+
+**Features:**
+- ✅ Vertex AI authentication (no API keys)
+- ✅ No permission prompts for file/shell/web operations
+- ✅ GA/Preview model routing
+- ✅ MCP server integration
+- ✅ Sandbox directory (avoids macOS permission issues)
+
+**See [GEMINI_SETUP.md](./GEMINI_SETUP.md) for complete documentation.**
+
+---
 
 ---
 

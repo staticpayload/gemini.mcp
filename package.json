@@ -1,6 +1,6 @@
 {
   "name": "@staticpayload/gemini-mcp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "MCP server that bridges Google's Gemini CLI to any MCP-compatible AI assistant",
   "type": "module",
   "main": "src/index.js",
@@ -43,6 +43,9 @@
   "files": [
     "src/**/*",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    ".env.example",
+    "setup-gemini.sh",
+    "GEMINI_SETUP.md"
   ]
 }

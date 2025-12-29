@@ -1,7 +1,7 @@
 {
   "name": "gemini-cli-mcp",
   "version": "1.0.0",
-  "description": "MCP server that exposes Google's Gemini CLI as an MCP tool",
+  "description": "MCP server that bridges Google's Gemini CLI to any MCP-compatible AI assistant",
   "type": "module",
   "main": "src/index.js",
   "bin": {
@@ -12,12 +12,27 @@
   },
   "keywords": [
     "mcp",
+    "model-context-protocol",
     "gemini",
-    "cli",
+    "google",
     "ai",
-    "model-context-protocol"
+    "cli",
+    "claude",
+    "cursor",
+    "windsurf",
+    "llm",
+    "assistant"
   ],
+  "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -27,6 +42,7 @@
   },
   "files": [
     "src/**/*",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ]
 }
